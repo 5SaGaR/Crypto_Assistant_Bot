@@ -1,0 +1,12 @@
+# Prompt Engineering Approach
+1. The approach followed to create the tool call agent is few-shot prompting 
+ 1.a. The system prompt of tool call agent can be viewed as few examples of how the tool can be called are provided in the prompt
+
+# Limitations
+
+2.
+ a. The agent flow is basically tailor made for making public api calls to coinmarketcap and the code will become more complex each time 
+  new tool addition is required in the app. 
+ b. Rather a direct class to get function signatures of required function into the prompt would make it easier to add further tool functionality to agent
+ c. Implementing rate limits would be benificial while sharing public link and will help in having track over number of api calls (so that we can impose suitable limits on api usage)
+
